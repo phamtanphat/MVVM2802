@@ -19,7 +19,7 @@
             android:layout_height="250dp"
             android:layout_centerHorizontal="true" />
         <EditText
-            android:text="@{user.email}"
+            android:text="@={user.email}"
             android:hint="Nhập vào email"
             android:layout_marginTop="20dp"
             android:layout_below="@id/imageview"
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <EditText
-            android:text="@{user.password}"
+            android:text="@={user.password}"
             android:hint="Nhập vào password"
             android:layout_marginTop="20dp"
             android:layout_below="@id/edittextEmail"
