@@ -31,8 +31,5 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        },500);
     }
-    @BindingAdapter({"android:src"})
-    public static void setImage(ImageView image , int hinh){
-        image.setImageResource(hinh);
-    }
+
 }
