@@ -2,6 +2,8 @@ package khoapham.ptp.phamtanphat.mvvmpattern;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
+import android.databinding.BindingAdapter;
+import android.widget.ImageView;
 
 import com.android.databinding.library.baseAdapters.BR;
 
@@ -45,4 +47,6 @@ public class User extends BaseObservable {
         this.image = image;
         notifyPropertyChanged(BR.image);
     }
+
+
 }
