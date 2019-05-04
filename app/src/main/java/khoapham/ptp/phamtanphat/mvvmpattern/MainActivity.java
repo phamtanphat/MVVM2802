@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityMainBinding mainBinding = DataBindingUtil.setContentView(this,R.layout.activity_main);
-        final User user = new User("","",R.mipmap.ic_launcher);
+        User user = new User("Hello","Hello",R.mipmap.ic_launcher);
         mainBinding.setUser(user);
         mainBinding.executePendingBindings();
 

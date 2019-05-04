@@ -4,7 +4,10 @@ import android.databinding.BaseObservable;
 import android.databinding.Bindable;
 import android.databinding.BindingAdapter;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.android.databinding.library.baseAdapters.BR;
 
@@ -18,6 +21,7 @@ public class User extends BaseObservable {
         this.password = password;
         this.image = image;
     }
+
 
     @Bindable
     public String getEmail() {
@@ -49,8 +53,16 @@ public class User extends BaseObservable {
         notifyPropertyChanged(BR.image);
     }
 
-    @BindingAdapter({"android:src"})
-    public static void setImage(ImageView image , int hinh){
-        image.setImageResource(hinh);
+//    @BindingAdapter({"android:src"})
+//    public static void setImage(ImageView image , int hinh){
+//        image.setImageResource(hinh);
+//    }
+
+    public void setOnClickViewButton(View v , String message){
+        Toast.makeText(v.getContext(), message, Toast.LENGTH_SHORT).show();
+    }
+    @BindingAdapter({"android:onClick"})
+    public static void setText(Button v , String message , int number){
+        Toast.makeText(v.getContext(), message, Toast.LENGTH_SHORT).show();
     }
 }
